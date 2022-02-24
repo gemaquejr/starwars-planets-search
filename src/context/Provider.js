@@ -5,6 +5,14 @@ import PlanetsApi from '../services/PlanetsAPI';
 
 function Provider({ children }) {
   const [stateA, setStateA] = useState([]);
+  const [filter, setFilter] = useState({
+    filters: {
+      filterByName: {
+        name: '',
+      },
+      filterByNumber: [],
+    },
+  });
 
   useEffect(() => {
     const getAPI = async () => {
@@ -17,6 +25,8 @@ function Provider({ children }) {
   const context = {
     stateA,
     setStateA,
+    filter,
+    setFilter,
   };
 
   return (
