@@ -5,6 +5,9 @@ import PlanetsApi from '../services/PlanetsAPI';
 
 function Provider({ children }) {
   const [stateA, setStateA] = useState([]);
+  const [column, setColumn] = useState('population');
+  const [comparison, setComparison] = useState('maior que', 'menor que', 'igual a');
+  const [numericValue, setNumericValue] = useState('0');
   const [filter, setFilter] = useState({
     filters: {
       filterByName: {
@@ -27,6 +30,12 @@ function Provider({ children }) {
     setStateA,
     filter,
     setFilter,
+    column,
+    setColumn,
+    comparison,
+    setComparison,
+    numericValue,
+    setNumericValue,
   };
 
   return (
