@@ -13,7 +13,14 @@ function FilterByNumber() {
     setComparison,
     numericValue,
     setNumericValue,
+    removeColumn,
+    setRemoveColumn,
   } = useContext(PlanetsContext);
+
+  const filterRemoveColumn = () => {
+    const filterRemove = removeColumn.filter((removeColumns) => removeColumns !== column);
+    setRemoveColumn(filterRemove);
+  };
 
   const filterNumbers = () => {
     let searchFilter;
@@ -31,6 +38,7 @@ function FilterByNumber() {
         .filter((planet) => Number(planet[column]) === Number((numericValue)));
     }
     setStateA(searchFilter);
+    filterRemoveColumn();
   };
 
   const handleClick = () => {
@@ -58,11 +66,11 @@ function FilterByNumber() {
           value={ column }
           onChange={ (element) => setColumn(element.target.value) }
         >
-          <option value="population">population</option>
-          <option value="orbital_period">orbital_period</option>
-          <option value="diameter">diameter</option>
-          <option value="rotation_period">rotation_period</option>
-          <option value="surface_water">surface_water</option>
+          { removeColumn.map((option) => (
+            <option key={ option } value={ option }>
+              { option }
+            </option>
+          ))}
         </select>
       </label>
       <label htmlFor="comparison-filter">

@@ -8,6 +8,13 @@ function Provider({ children }) {
   const [column, setColumn] = useState('population');
   const [comparison, setComparison] = useState('maior que', 'menor que', 'igual a');
   const [numericValue, setNumericValue] = useState('0');
+  const [removeColumn, setRemoveColumn] = useState([
+    'population',
+    'orbital_period',
+    'diameter',
+    'rotation_period',
+    'surface_water',
+  ]);
   const [filter, setFilter] = useState({
     filters: {
       filterByName: {
@@ -36,6 +43,8 @@ function Provider({ children }) {
     setComparison,
     numericValue,
     setNumericValue,
+    removeColumn,
+    setRemoveColumn,
   };
 
   return (
