@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import PlanetsContext from '../context/PlanetsContext';
 
+import './styles/FilterByNumber.css';
+
 export default function FilterByNumber() {
   const {
     numberFilter,
@@ -81,7 +83,7 @@ export default function FilterByNumber() {
   };
 
   return (
-    <div>
+    <div className="filter-container">
       <select
         value={ currentFilter.column }
         onChange={ handleChange }

@@ -5,6 +5,6 @@
     margin-bottom: 20px;
   }
   
- label [htmlFor="planets-name"] {
+ label[htmlFor="planets-name"] {
     width: 40rem;
   }
