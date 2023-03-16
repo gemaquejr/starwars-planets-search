@@ -1,0 +1,10 @@
+.name-filter-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+ label [htmlFor="planets-name"] {
+    width: 40rem;
+  }

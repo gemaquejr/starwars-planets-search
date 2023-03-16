@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import PlanetsContext from '../context/PlanetsContext';
 
+import './styles/FilterByName.css';
+
 function FilterByName() {
   const { nameFilter, setNameFilter } = useContext(PlanetsContext);
 
@@ -11,7 +13,7 @@ function FilterByName() {
   };
 
   return (
-    <div>
+    <div className="name-filter-container">
       <label htmlFor="planets-name">
         <input
           id="planets-name"
