@@ -1,0 +1,19 @@
+
+.table-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+  
+table {
+    display: block;
+    line-height: 60px;
+    margin: 0 auto;
+    max-width: fit-content;
+    overflow-x: auto;
+    padding-top: 30px;
+    white-space: nowrap;
+  }

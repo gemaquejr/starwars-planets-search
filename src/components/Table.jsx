@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import PlanetsContext from '../context/PlanetsContext';
 
+import './styles/Table.css';
+
 export default function Table() {
   const { planets, nameFilter } = useContext(PlanetsContext);
   const { filter } = useContext(PlanetsContext);
@@ -50,7 +52,7 @@ export default function Table() {
   };
 
   return (
-    <div>
+    <div className="table-container">
       <table>
         <tr>
           <th>Name</th>
