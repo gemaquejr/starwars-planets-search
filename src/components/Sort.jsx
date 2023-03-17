@@ -31,7 +31,7 @@ export default function SortBy() {
   };
 
   return (
-    <div>
+    <div className="sort-planet-container">
       <select
         name="sortColumn"
         value={ sortColumn }

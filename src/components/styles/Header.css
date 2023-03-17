@@ -1,0 +1,25 @@
+.header-container {
+    height: 17rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 30px;
+    width: 100%;
+  }
+  
+  .header-title-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    text-align: center;
+  }
+  
+  .star-wars-logo {
+    margin-block: 5px;
+    width: 15%;
+  }

@@ -1,16 +1,11 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
 }
 
 body {
-  height: 100vh;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   align-items: center;
   color: white;
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
 }
