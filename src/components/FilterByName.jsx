@@ -21,6 +21,7 @@ function FilterByName() {
           type="text"
           onChange={ handleChange }
           data-testid="name-filter"
+          placeholder="Pesquise por nome"
         />
       </label>
     </div>
