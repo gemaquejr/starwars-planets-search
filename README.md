@@ -6,7 +6,7 @@ Essa aplicação foi feita usando React, Context API e Hooks consumindo os dados
 
 Aplicação que consiste em uma aplicação com uma lista com filtros de planetas do universo de Star Wars.
 
-O projeto foi desenvolver uma aplicação em React com Context API, que permite o compartilhamento de estado entre vários componentes, sem que seja necessário passá-lo manualmente através de props.
+O projeto foi desenvolver uma aplicação em React com Context API e Hooks, permitindo o compartilhamento de estado entre vários componentes, sem que seja necessário passá-lo manualmente através de props.
 
 
 ## 🚀 Tecnologia
