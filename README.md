@@ -1,6 +1,6 @@
 # Starwars Planets Search
 
-Essa aplicação foi feita usando React, Context API e Hooks consumindo os dados da [API](https://swapi.dev/api/planets) do swapi.dev para buscar os dados planetas do universo de Star Wars.
+Essa aplicação foi feita usando React, Context API e Hooks consumindo os dados da [API](https://swapi.dev/api/planets) do swapi.dev para buscar os dados dos planetas do universo de Star Wars.
 
 ![preview](.github/preview.png)
 
